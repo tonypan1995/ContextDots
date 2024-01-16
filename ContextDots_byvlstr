@@ -3,6 +3,8 @@ Sub ContextDots()
             With ActivePresentation
             
                 SectionCount = .SectionProperties.Count
+                ' Skip the last section which is assumed to be backup slides
+                SectionCount = SectionCount - 1
                 
                 For X = 1 To .Slides.Count
                     .Slides(X).Shapes("Background").Delete
