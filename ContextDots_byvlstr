@@ -12,11 +12,11 @@ Sub ContextDots()
                     Set bg = .Slides(X).Shapes.AddShape(msoShapeRectangle, 0, 0, .PageSetup.SlideWidth, 25)
                     bg.Name = "Background"
                     ' Change the rectangle's colours here
-                    bg.Fill.ForeColor.RGB = vbBlack
-                    bg.Line.ForeColor.RGB = vbBlack
+                    bg.Fill.ForeColor.RGB = RGB(0, 32, 91)
+                    bg.Line.ForeColor.RGB = RGB(0, 32, 91)
                     
                     ' Change the bullets' size, shape and spacing here
-                    BulletSize = 6
+                    BulletSize = 5
                     BulletShape = msoShapeOval
                     BulletSpacing = 2
                     
